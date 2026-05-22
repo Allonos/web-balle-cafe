@@ -8,6 +8,12 @@
   </head>
   <body>
     <header class="header">
+      <div class="header__burger" id="burger">
+        <div class="burger__line"></div>
+        <div class="burger__line"></div>
+        <div class="burger__line"></div>
+      </div>
+
       <a href="index.html" class="header__logo">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -30,8 +36,6 @@
         <span class="header__logo-text">Bella Café</span>
       </a>
 
-      <h1 class="sr-only">Bella Café — Restaurant & Coffee Shop</h1>
-
       <nav class="header__nav">
         <ul class="header__nav-list">
           <li><a href="index.html" class="header__nav-link">Home</a></li>
@@ -41,6 +45,94 @@
         </ul>
       </nav>
     </header>
+
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <aside class="nav-sidebar" id="navSidebar">
+      <div class="nav-sidebar__header">
+        <div class="nav-sidebar__brand">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M10 2v2" />
+            <path d="M14 2v2" />
+            <path
+              d="M16 8a1 1 0 0 1 1 1v8a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1h14a4 4 0 1 1 0 8h-1"
+            />
+            <path d="M6 2v2" />
+          </svg>
+          <span>Bella Café</span>
+        </div>
+        <div
+          class="nav-sidebar__close"
+          id="sidebarClose"
+          aria-label="Close menu"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M18 6L6 18" />
+            <path d="M6 6l12 12" />
+          </svg>
+        </div>
+      </div>
+      <ul class="nav-sidebar__list">
+        <li><a href="index.html" class="nav-sidebar__link">Home</a></li>
+        <li><a href="menu.html" class="nav-sidebar__link">Menu</a></li>
+        <li><a href="about.html" class="nav-sidebar__link">About Us</a></li>
+        <li><a href="contact.html" class="nav-sidebar__link">Contact</a></li>
+      </ul>
+    </aside>
+
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <aside class="nav-sidebar" id="navSidebar">
+      <div class="nav-sidebar__header">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M10 2v2" />
+          <path d="M14 2v2" />
+          <path
+            d="M16 8a1 1 0 0 1 1 1v8a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1h14a4 4 0 1 1 0 8h-1"
+          />
+          <path d="M6 2v2" />
+        </svg>
+        <span>Bella Café</span>
+      </div>
+      <ul class="nav-sidebar__list">
+        <li><a href="index.html" class="nav-sidebar__link">Home</a></li>
+        <li><a href="menu.html" class="nav-sidebar__link">Menu</a></li>
+        <li><a href="about.html" class="nav-sidebar__link">About Us</a></li>
+        <li><a href="contact.html" class="nav-sidebar__link">Contact</a></li>
+      </ul>
+    </aside>
+
+    <h1 class="sr-only">Bella Café — Restaurant & Coffee Shop</h1>
 
     <section class="hero">
       <div class="hero__content">
@@ -60,7 +152,7 @@
       </div>
 
       <div class="features__grid">
-        <div class="feature-card">
+        <div class="feature-card feature-card--animated">
           <div class="feature-card__icon">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -87,7 +179,7 @@
           </p>
         </div>
 
-        <div class="feature-card">
+        <div class="feature-card feature-card--animated">
           <div class="feature-card__icon">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -266,5 +358,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./index.js"></script>
   </body>
 </html>

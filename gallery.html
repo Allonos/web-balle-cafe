@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <title>Bella Café - About Us</title>
+    <title>Bella Café - Gallery</title>
   </head>
   <body>
     <header class="header">
@@ -43,13 +43,15 @@
           </li>
           <li><a href="menu.html" class="header__nav-link">Menu</a></li>
           <li>
+            <a href="about.html" class="header__nav-link">About Us</a>
+          </li>
+          <li>
             <a
-              href="about.html"
+              href="gallery.html"
               class="header__nav-link header__nav-link--active"
-              >About Us</a
+              >Gallery</a
             >
           </li>
-          <li><a href="gallery.html" class="header__nav-link">Gallery</a></li>
           <li><a href="contact.html" class="header__nav-link">Contact</a></li>
         </ul>
       </nav>
@@ -107,184 +109,51 @@
         </li>
         <li><a href="menu.html" class="nav-sidebar__link">Menu</a></li>
         <li>
+          <a href="about.html" class="nav-sidebar__link">About Us</a>
+        </li>
+        <li>
           <a
-            href="about.html"
+            href="gallery.html"
             class="nav-sidebar__link nav-sidebar__link--active"
-            >About Us</a
+            >Gallery</a
           >
         </li>
-        <li><a href="gallery.html" class="nav-sidebar__link">Gallery</a></li>
         <li><a href="contact.html" class="nav-sidebar__link">Contact</a></li>
       </ul>
     </aside>
 
-    <div class="nav-overlay" id="navOverlay"></div>
-
-    <h1 class="sr-only">Bella Café — About Us</h1>
-
-    <section class="about">
-      <div class="about__header">
-        <h2 class="about__title">Our Story</h2>
-        <span class="about__subtitle"
-          >A journey of passion, flavor, and community</span
-        >
+    <section class="gallery">
+      <div class="gallery__header">
+        <h2 class="gallery__title">Our Gallery</h2>
+        <p class="gallery__subtitle">
+          A glimpse into the Bella Café experience
+        </p>
       </div>
 
-      <div class="about__story">
-        <div class="about__story-img-wrap img-zoom-wrap">
-          <img
-            class="about__story-img"
-            src="./assets/ourStoryImg.jpeg"
-            alt="Our story"
-          />
+      <div class="gallery__grid">
+        <div class="gallery__item img-zoom-wrap">
+          <img src="./assets/food1.jpg" alt="Avocado Toast" />
         </div>
-        <div class="about__story-content">
-          <h3 class="about__story-title">Where It All Began</h3>
-          <div class="about__story-text">
-            <p>
-              Founded in 2016, Bella Café started as a dream to create a warm,
-              welcoming space where people could enjoy exceptional coffee and
-              food in a cozy atmosphere. What began as a small neighborhood café
-              has grown into a beloved community gathering place.
-            </p>
-            <p>
-              Our commitment to quality has never wavered. We source the finest
-              ingredients, from locally-grown produce to sustainably-harvested
-              coffee beans from around the world. Every dish and every cup is
-              crafted with care and attention to detail.
-            </p>
-            <p>
-              But what truly makes Bella Café special is our people. From our
-              talented culinary team to our friendly staff, everyone here shares
-              a passion for creating memorable experiences for our guests.
-            </p>
-          </div>
+        <div class="gallery__item gallery__item--wide img-zoom-wrap">
+          <img src="./assets/ourStoryImg.jpeg" alt="Café interior" />
         </div>
-      </div>
-
-      <div class="about__stats">
-        <div class="about__stat">
-          <div class="about__stat-icon">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="28"
-              height="28"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path
-                d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"
-              />
-              <circle cx="12" cy="8" r="6" />
-            </svg>
-          </div>
-          <h3 class="about__stat-number">10 Years Open</h3>
-          <span class="about__stat-label">Since 2016</span>
+        <div class="gallery__item img-zoom-wrap gallery__item--wide">
+          <img src="./assets/photo2.jpeg" alt="Café atmosphere" />
         </div>
-        <div class="about__stat">
-          <div class="about__stat-icon">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="28"
-              height="28"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path d="M10 2v2" />
-              <path d="M14 2v2" />
-              <path
-                d="M16 8a1 1 0 0 1 1 1v8a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1h14a4 4 0 1 1 0 8h-1"
-              />
-              <path d="M6 2v2" />
-            </svg>
-          </div>
-          <h3 class="about__stat-number">200+ Menu Items</h3>
-          <span class="about__stat-label">Always Fresh</span>
+        <div class="gallery__item img-zoom-wrap">
+          <img src="./assets/drinks3.jpeg" alt="Iced Mocha" />
         </div>
-        <div class="about__stat">
-          <div class="about__stat-icon">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="28"
-              height="28"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path
-                d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"
-              />
-            </svg>
-          </div>
-          <h3 class="about__stat-number">50K Happy Customers</h3>
-          <span class="about__stat-label">And Counting</span>
+        <div class="gallery__item img-zoom-wrap">
+          <img src="./assets/drinks4.jpeg" alt="Matcha Latte" />
         </div>
-      </div>
-
-      <div class="about__team">
-        <div class="about__team-header">
-          <h2 class="about__team-title">Meet Our Team</h2>
-          <span class="about__team-subtitle"
-            >The talented individuals who bring Bella Café to life every
-            day</span
-          >
+        <div class="gallery__item img-zoom-wrap gallery__item--wide">
+          <img src="./assets/food3.jpg" alt="Breakfast Bowl" />
         </div>
-        <div class="about__team-grid">
-          <div class="team-card">
-            <div class="team-card__img-wrap">
-              <img
-                class="team-card__img"
-                src="./assets/staff1.jpeg"
-                alt="Sofia Martinez"
-              />
-            </div>
-            <h4 class="team-card__name">Sofia Martinez</h4>
-            <span class="team-card__role">Head Chef</span>
-          </div>
-          <div class="team-card">
-            <div class="team-card__img-wrap">
-              <img
-                class="team-card__img"
-                src="./assets/staff2.jpeg"
-                alt="James Chen"
-              />
-            </div>
-            <h4 class="team-card__name">James Chen</h4>
-            <span class="team-card__role">Master Barista</span>
-          </div>
-          <div class="team-card">
-            <div class="team-card__img-wrap">
-              <img
-                class="team-card__img"
-                src="./assets/staff3.jpeg"
-                alt="Emma Thompson"
-              />
-            </div>
-            <h4 class="team-card__name">Emma Thompson</h4>
-            <span class="team-card__role">Pastry Chef</span>
-          </div>
-          <div class="team-card">
-            <div class="team-card__img-wrap">
-              <img
-                class="team-card__img"
-                src="./assets/staff4.jpeg"
-                alt="Marco Rossi"
-              />
-            </div>
-            <h4 class="team-card__name">Marco Rossi</h4>
-            <span class="team-card__role">Sous Chef</span>
-          </div>
+        <div class="gallery__item img-zoom-wrap gallery__item--wide">
+          <img src="./assets/food4.jpg" alt="Gourmet Burger" />
+        </div>
+        <div class="gallery__item img-zoom-wrap">
+          <img src="./assets/desserts3.jpeg" alt="Crème Brûlée" />
         </div>
       </div>
     </section>

@@ -38,7 +38,13 @@
 
       <nav class="header__nav">
         <ul class="header__nav-list">
-          <li><a href="index.html" class="header__nav-link">Home</a></li>
+          <li>
+            <a
+              href="index.html"
+              class="header__nav-link header__nav-link--active"
+              >Home</a
+            >
+          </li>
           <li><a href="menu.html" class="header__nav-link">Menu</a></li>
           <li><a href="about.html" class="header__nav-link">About Us</a></li>
           <li><a href="contact.html" class="header__nav-link">Contact</a></li>
@@ -93,7 +99,13 @@
         </div>
       </div>
       <ul class="nav-sidebar__list">
-        <li><a href="index.html" class="nav-sidebar__link">Home</a></li>
+        <li>
+          <a
+            href="index.html"
+            class="nav-sidebar__link nav-sidebar__link--active"
+            >Home</a
+          >
+        </li>
         <li><a href="menu.html" class="nav-sidebar__link">Menu</a></li>
         <li><a href="about.html" class="nav-sidebar__link">About Us</a></li>
         <li><a href="contact.html" class="nav-sidebar__link">Contact</a></li>
@@ -101,36 +113,6 @@
     </aside>
 
     <div class="nav-overlay" id="navOverlay"></div>
-
-    <aside class="nav-sidebar" id="navSidebar">
-      <div class="nav-sidebar__header">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        >
-          <path d="M10 2v2" />
-          <path d="M14 2v2" />
-          <path
-            d="M16 8a1 1 0 0 1 1 1v8a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1h14a4 4 0 1 1 0 8h-1"
-          />
-          <path d="M6 2v2" />
-        </svg>
-        <span>Bella Café</span>
-      </div>
-      <ul class="nav-sidebar__list">
-        <li><a href="index.html" class="nav-sidebar__link">Home</a></li>
-        <li><a href="menu.html" class="nav-sidebar__link">Menu</a></li>
-        <li><a href="about.html" class="nav-sidebar__link">About Us</a></li>
-        <li><a href="contact.html" class="nav-sidebar__link">Contact</a></li>
-      </ul>
-    </aside>
 
     <h1 class="sr-only">Bella Café — Restaurant & Coffee Shop</h1>
 
@@ -232,11 +214,13 @@
     </section>
 
     <section class="about-preview">
-      <img
-        class="about-preview__img"
-        src="./assets/crafted-coffee.jpeg"
-        alt="crafted coffee"
-      />
+      <div class="about-preview__img-wrap">
+        <img
+          class="about-preview__img"
+          src="./assets/crafted-coffee.jpeg"
+          alt="crafted coffee"
+        />
+      </div>
       <div class="about-preview__content">
         <h2 class="about-preview__title">Crafted with Passion</h2>
         <p class="about-preview__text">

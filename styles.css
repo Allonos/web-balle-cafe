@@ -335,7 +335,7 @@ svg {
   width: 100%;
   min-height: 600px;
   background-image:
-    linear-gradient(var(--color-espresso-50), var(--color-espresso-50)),
+    linear-gradient(var(--color-espresso-50), var(--color-brown-mid)),
     url("./assets/photo2.jpeg");
   background-size: cover;
   background-position: center;

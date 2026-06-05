@@ -8,13 +8,25 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__burger" id="burger">
+      <div
+        class="header__burger"
+        id="burger"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="navSidebar"
+        role="button"
+        tabindex="0"
+      >
         <div class="burger__line"></div>
         <div class="burger__line"></div>
         <div class="burger__line"></div>
       </div>
 
-      <a href="index.html" class="header__logo">
+      <a
+        href="index.html"
+        class="header__logo"
+        aria-label="Bella Café – go to homepage"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -25,6 +37,8 @@
           stroke-width="2"
           stroke-linecap="round"
           stroke-linejoin="round"
+          aria-hidden="true"
+          focusable="false"
         >
           <path d="M10 2v2" />
           <path d="M14 2v2" />
@@ -36,22 +50,17 @@
         <span class="header__logo-text">Bella Café</span>
       </a>
 
-      <nav class="header__nav">
-        <ul class="header__nav-list">
-          <li>
-            <a href="index.html" class="header__nav-link">Home</a>
-          </li>
+      <nav class="header__nav" aria-label="Primary navigation">
+        <ul class="header__nav-list" role="list">
+          <li><a href="index.html" class="header__nav-link">Home</a></li>
           <li><a href="menu.html" class="header__nav-link">Menu</a></li>
-          <li>
-            <a href="about.html" class="header__nav-link">About Us</a>
-          </li>
-          <li>
-            <a href="gallery.html" class="header__nav-link">Gallery</a>
-          </li>
+          <li><a href="about.html" class="header__nav-link">About Us</a></li>
+          <li><a href="gallery.html" class="header__nav-link">Gallery</a></li>
           <li>
             <a
               href="contact.html"
               class="header__nav-link header__nav-link--active"
+              aria-current="page"
               >Contact</a
             >
           </li>
@@ -59,11 +68,16 @@
       </nav>
     </header>
 
-    <div class="nav-overlay" id="navOverlay"></div>
+    <div class="nav-overlay" id="navOverlay" aria-hidden="true"></div>
 
-    <nav class="nav-sidebar" id="navSidebar">
+    <nav
+      class="nav-sidebar"
+      id="navSidebar"
+      aria-label="Mobile navigation"
+      aria-hidden="true"
+    >
       <div class="nav-sidebar__header">
-        <div class="nav-sidebar__brand">
+        <div class="nav-sidebar__brand" aria-hidden="true">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -74,6 +88,8 @@
             stroke-width="2"
             stroke-linecap="round"
             stroke-linejoin="round"
+            aria-hidden="true"
+            focusable="false"
           >
             <path d="M10 2v2" />
             <path d="M14 2v2" />
@@ -84,10 +100,11 @@
           </svg>
           <span>Bella Café</span>
         </div>
-        <div
+        <button
           class="nav-sidebar__close"
           id="sidebarClose"
-          aria-label="Close menu"
+          aria-label="Close navigation menu"
+          type="button"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -99,193 +116,267 @@
             stroke-width="2"
             stroke-linecap="round"
             stroke-linejoin="round"
+            aria-hidden="true"
+            focusable="false"
           >
             <path d="M18 6L6 18" />
             <path d="M6 6l12 12" />
           </svg>
-        </div>
+        </button>
       </div>
-      <ul class="nav-sidebar__list">
-        <li>
-          <a href="index.html" class="nav-sidebar__link">Home</a>
-        </li>
+      <ul class="nav-sidebar__list" role="list">
+        <li><a href="index.html" class="nav-sidebar__link">Home</a></li>
         <li><a href="menu.html" class="nav-sidebar__link">Menu</a></li>
-        <li>
-          <a href="about.html" class="nav-sidebar__link">About Us</a>
-        </li>
-        <li>
-          <a href="gallery.html" class="nav-sidebar__link">Gallery</a>
-        </li>
+        <li><a href="about.html" class="nav-sidebar__link">About Us</a></li>
+        <li><a href="gallery.html" class="nav-sidebar__link">Gallery</a></li>
         <li>
           <a
             href="contact.html"
             class="nav-sidebar__link nav-sidebar__link--active"
+            aria-current="page"
             >Contact</a
           >
         </li>
       </ul>
     </nav>
 
-    <h1 class="sr-only">Bella Café — Contact</h1>
+    <main>
+      <h1 class="sr-only">Bella Café — Contact</h1>
 
-    <section class="contact">
-      <div class="contact__header">
-        <h2 class="contact__title">Visit Us</h2>
-        <p class="contact__subtitle">We'd love to hear from you</p>
-      </div>
+      <section class="contact" aria-labelledby="contact-heading">
+        <header class="contact__header">
+          <h2 id="contact-heading" class="contact__title">Visit Us</h2>
+          <p class="contact__subtitle">We'd love to hear from you</p>
+        </header>
 
-      <div class="contact__body">
-        <div class="contact__info-col">
-          <ul class="contact__info-list">
-            <li class="contact__info-item">
-              <div class="contact__info-icon">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+        <div class="contact__body">
+          <!-- Contact information column -->
+          <address class="contact__info-col">
+            <ul class="contact__info-list" role="list">
+              <li class="contact__info-item">
+                <div class="contact__info-icon" aria-hidden="true">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                    focusable="false"
+                  >
+                    <path
+                      d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
+                    />
+                    <circle cx="12" cy="10" r="3" />
+                  </svg>
+                </div>
+                <a
+                  href="https://www.google.com/maps/place/TSU+11th+Building+(Ganivi)/@41.7169702,44.7189763,17z"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="contact__info-text"
                 >
-                  <path
-                    d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
-                  />
-                  <circle cx="12" cy="10" r="3" />
-                </svg>
-              </div>
-              <a
-                href="https://www.google.com/maps/place/TSU+11th+Building+(Ganivi)/@41.7169702,44.7189763,17z"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="contact__info-text"
-              >
-                123 Coffee Street, Bean City, CA 90210
-              </a>
-            </li>
-            <li class="contact__info-item">
-              <div class="contact__info-icon">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  123 Coffee Street, Bean City, CA 90210
+                </a>
+              </li>
+              <li class="contact__info-item">
+                <div class="contact__info-icon" aria-hidden="true">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                    focusable="false"
+                  >
+                    <path
+                      d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"
+                    />
+                  </svg>
+                </div>
+                <a href="tel:+11234567890" class="contact__info-text"
+                  >(123) 456-7890</a
                 >
-                  <path
-                    d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"
-                  />
-                </svg>
-              </div>
-              <a href="tel:1234567890" class="contact__info-text"
-                >(123) 456-7890</a
-              >
-            </li>
-            <li class="contact__info-item">
-              <div class="contact__info-icon">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+              </li>
+              <li class="contact__info-item">
+                <div class="contact__info-icon" aria-hidden="true">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                    focusable="false"
+                  >
+                    <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
+                    <rect x="2" y="4" width="20" height="16" rx="2" />
+                  </svg>
+                </div>
+                <a href="mailto:info@bellacafe.com" class="contact__info-text"
+                  >info@bellacafe.com</a
                 >
-                  <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
-                  <rect x="2" y="4" width="20" height="16" rx="2" />
-                </svg>
-              </div>
-              <a href="mailto:info@bellacafe.com" class="contact__info-text"
-                >info@bellacafe.com</a
-              >
-            </li>
-            <li class="contact__info-item">
-              <div class="contact__info-icon">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <circle cx="12" cy="12" r="10" />
-                  <path d="M12 6v6l4 2" />
-                </svg>
-              </div>
-              <span class="contact__info-text">Everyday: 8am – 10pm</span>
-            </li>
-          </ul>
+              </li>
+              <li class="contact__info-item">
+                <div class="contact__info-icon" aria-hidden="true">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                    focusable="false"
+                  >
+                    <circle cx="12" cy="12" r="10" />
+                    <path d="M12 6v6l4 2" />
+                  </svg>
+                </div>
+                <span class="contact__info-text">
+                  <time>Everyday: 8am – 10pm</time>
+                </span>
+              </li>
+            </ul>
 
-          <a
-            href="https://www.google.com/maps/place/TSU+11th+Building+(Ganivi)/@41.7169702,44.7189763,17z"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              class="contact__map"
-              src="./assets/Location.png"
-              alt="Map showing Bella Café location"
-            />
-          </a>
-        </div>
-
-        <div>
-          <h2 class="contact__form-title">Send Us a Message</h2>
-          <form class="contact__form" id="contactForm" novalidate>
-            <div class="contact__form-group">
-              <label class="contact__label" for="contactName">Name</label>
-              <input
-                class="contact__input"
-                type="text"
-                id="contactName"
-                placeholder="Your name"
+            <a
+              href="https://www.google.com/maps/place/TSU+11th+Building+(Ganivi)/@41.7169702,44.7189763,17z"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open Bella Café location in Google Maps"
+            >
+              <img
+                class="contact__map"
+                src="./assets/Location.png"
+                alt="Map showing Bella Café at 123 Coffee Street, Bean City"
+                width="600"
+                height="400"
+                loading="lazy"
               />
-              <span class="contact__error" id="nameError"></span>
-            </div>
-            <div class="contact__form-group">
-              <label class="contact__label" for="contactEmail">Email</label>
-              <input
-                class="contact__input"
-                type="email"
-                id="contactEmail"
-                placeholder="your@email.com"
-              />
-              <span class="contact__error" id="emailError"></span>
-            </div>
-            <div class="contact__form-group">
-              <label class="contact__label" for="contactMessage">Message</label>
-              <textarea
-                class="contact__input contact__textarea"
-                id="contactMessage"
-                placeholder="Write your message..."
-              ></textarea>
-              <span class="contact__error" id="messageError"></span>
-            </div>
-            <button type="submit" class="btn btn--primary btn--submit">
-              Send Message
-            </button>
-          </form>
+            </a>
+          </address>
+
+          <!-- Contact form column -->
+          <section aria-labelledby="contact-form-heading">
+            <h2 id="contact-form-heading" class="contact__form-title">
+              Send Us a Message
+            </h2>
+            <form
+              class="contact__form"
+              id="contactForm"
+              novalidate
+              aria-describedby="form-status"
+            >
+              <p
+                id="form-status"
+                class="sr-only"
+                aria-live="polite"
+                aria-atomic="true"
+              ></p>
+
+              <div class="contact__form-group">
+                <label class="contact__label" for="contactName">
+                  Name <span aria-hidden="true">*</span>
+                  <span class="sr-only">(required)</span>
+                </label>
+                <input
+                  class="contact__input"
+                  type="text"
+                  id="contactName"
+                  name="name"
+                  placeholder="Your name"
+                  required
+                  autocomplete="name"
+                  aria-required="true"
+                  aria-describedby="nameError"
+                />
+                <span
+                  class="contact__error"
+                  id="nameError"
+                  role="alert"
+                  aria-live="polite"
+                ></span>
+              </div>
+
+              <div class="contact__form-group">
+                <label class="contact__label" for="contactEmail">
+                  Email <span aria-hidden="true">*</span>
+                  <span class="sr-only">(required)</span>
+                </label>
+                <input
+                  class="contact__input"
+                  type="email"
+                  id="contactEmail"
+                  name="email"
+                  placeholder="your@email.com"
+                  required
+                  autocomplete="email"
+                  aria-required="true"
+                  aria-describedby="emailError"
+                />
+                <span
+                  class="contact__error"
+                  id="emailError"
+                  role="alert"
+                  aria-live="polite"
+                ></span>
+              </div>
+
+              <div class="contact__form-group">
+                <label class="contact__label" for="contactMessage">
+                  Message <span aria-hidden="true">*</span>
+                  <span class="sr-only">(required)</span>
+                </label>
+                <textarea
+                  class="contact__input contact__textarea"
+                  id="contactMessage"
+                  name="message"
+                  placeholder="Write your message..."
+                  required
+                  aria-required="true"
+                  aria-describedby="messageError"
+                ></textarea>
+                <span
+                  class="contact__error"
+                  id="messageError"
+                  role="alert"
+                  aria-live="polite"
+                ></span>
+              </div>
+
+              <button type="submit" class="btn btn--primary btn--submit">
+                Send Message
+              </button>
+            </form>
+          </section>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
     <footer class="footer">
       <div class="footer__grid">
         <div class="footer__brand">
-          <div class="footer__logo">
+          <a
+            href="index.html"
+            class="footer__logo"
+            aria-label="Bella Café – go to homepage"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -296,6 +387,8 @@
               stroke-width="2"
               stroke-linecap="round"
               stroke-linejoin="round"
+              aria-hidden="true"
+              focusable="false"
             >
               <path d="M10 2v2" />
               <path d="M14 2v2" />
@@ -305,88 +398,110 @@
               <path d="M6 2v2" />
             </svg>
             <span class="footer__logo-text">Bella Café</span>
-          </div>
+          </a>
           <p class="footer__tagline">
             Serving the finest coffee and cuisine with love since 2016
           </p>
         </div>
 
-        <div class="footer__col">
-          <span class="footer__col-title">Quick Links</span>
-          <ul class="footer__links">
+        <nav class="footer__col" aria-label="Footer navigation">
+          <h3 class="footer__col-title">Quick Links</h3>
+          <ul class="footer__links" role="list">
             <li><a href="index.html">Home</a></li>
             <li><a href="menu.html">Menu</a></li>
             <li><a href="about.html">About Us</a></li>
             <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html" aria-current="page">Contact</a></li>
           </ul>
-        </div>
+        </nav>
 
-        <div class="footer__col">
-          <span class="footer__col-title">Contact Us</span>
+        <address class="footer__col">
+          <h3 class="footer__col-title">Contact Us</h3>
           <div class="footer__contact">
             <a
               target="_blank"
-              href="https://www.google.com/maps/place/TSU+11th+Building+(Ganivi)/@41.7169702,44.7189763,17z/data=!3m1!4b1!4m6!3m5!1s0x40447371b40dc741:0xaa9f66639d890960!8m2!3d41.7169702!4d44.7215512!16s%2Fg%2F1vtzfq1t?entry=ttu&g_ep=EgoyMDI2MDUxNy4wIKXMDSoASAFQAw%3D%3D"
+              rel="noopener noreferrer"
+              href="https://www.google.com/maps/place/TSU+11th+Building+(Ganivi)/@41.7169702,44.7189763,17z"
               >123 Coffee Street, Bean City, CA 90210</a
             >
             <p>
               Email: <a href="mailto:info@bellacafe.com">info@bellacafe.com</a>
             </p>
-            <p>Phone: <a href="tel:1234567890">(123) 456-7890</a></p>
+            <p>Phone: <a href="tel:+11234567890">(123) 456-7890</a></p>
           </div>
-        </div>
+        </address>
 
         <div class="footer__col">
-          <span class="footer__col-title">Follow Us</span>
-          <div class="footer__socials">
-            <a
-              href="https://www.facebook.com/TbilisiStateUniversity"
-              class="footer__social-link"
-              aria-label="Facebook"
-              target="_blank"
-            >
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124 124">
-                <path
-                  fill="currentColor"
-                  fill-rule="evenodd"
-                  d="M50.1 62.4v44.4c0 .6.5 1.2 1.2 1.2h16.5c.6 0 1.2-.5 1.2-1.2V61.6h11.9c.6 0 1.1-.5 1.2-1.1l1-13.5c.1-.7-.5-1.3-1.2-1.3h-13v-9.6c0-2.3 1.8-4.1 4.1-4.1h9.2c.6 0 1.2-.5 1.2-1.2V17.3c0-.6-.5-1.2-1.2-1.2H66.6c-9.1 0-16.5 7.4-16.5 16.5v13.1h-8.2c-.6 0-1.2.5-1.2 1.2v13.6c0 .6.5 1.2 1.2 1.2h8.2v.7z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-            </a>
-            <a
-              href="https://www.instagram.com/tbilisistateuniversity"
-              class="footer__social-link"
-              aria-label="Instagram"
-              target="_blank"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+          <h3 class="footer__col-title">Follow Us</h3>
+          <ul class="footer__socials" role="list">
+            <li>
+              <a
+                href="https://www.facebook.com/TbilisiStateUniversity"
+                class="footer__social-link"
+                aria-label="Follow Bella Café on Facebook"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                <path
-                  fill="currentColor"
-                  d="M16,4H8C5.791,4 4,5.791 4,8v8c0,2.209 1.791,4 4,4h8c2.209,0 4,-1.791 4,-4V8C20,5.791 18.209,4 16,4Zm2,12c0,1.103 -0.897,2 -2,2H8c-1.103,0 -2,-0.897 -2,-2V8c0,-1.103 0.897,-2 2,-2h8c1.103,0 2,0.897 2,2v8Zm-6,-7a3,3 0 1,0 0,6a3,3 0 0,0 0,-6Zm0,5a2,2 0 1,1 0,-4a2,2 0 0,1 0,4Zm3.5,-5.5a0.9,0.9 0 1,1 -1.8,0a0.9,0.9 0 0,1 1.8,0Z"
-                />
-              </svg>
-            </a>
-            <a
-              href="https://twitter.com"
-              class="footer__social-link"
-              aria-label="Twitter / X"
-              target="_blank"
-            >
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-                <path
-                  fill="currentColor"
-                  d="M28.77 8.11a.87.87 0 0 0-.23-.2A4.69 4.69 0 0 0 29 6.54a1 1 0 0 0-.44-1a1 1 0 0 0-1.1 0a6.42 6.42 0 0 1-2.28.92a6.21 6.21 0 0 0-7.08-1A6.07 6.07 0 0 0 15 12.2a1 1 0 0 0 2-.4a4.08 4.08 0 0 1 2-4.52a4.24 4.24 0 0 1 5.12 1a1 1 0 0 0 .88.28h.25a1 1 0 0 0 .34 1.62a1 1 0 0 0-.36.88a13.07 13.07 0 0 1-4.89 11.24a12.75 12.75 0 0 1-12.65 2.31a9.06 9.06 0 0 0 4.54-2.18a1 1 0 0 0 .15-1.09a1 1 0 0 0-.93-.57a4 4 0 0 1-3-1.39a3.63 3.63 0 0 0 1-.35A1 1 0 0 0 10 18a1 1 0 0 0-.76-.84a4.42 4.42 0 0 1-3-2.48c.24 0 .48.05.74.06a1 1 0 0 0 1-.62A1 1 0 0 0 7.67 13C6 11.48 5.59 9.85 5.83 8.7a13.88 13.88 0 0 0 7 4a1 1 0 1 0 .38-2a12.1 12.1 0 0 1-6.82-4.39a1 1 0 0 0-.75-.38a1 1 0 0 0-.78.33a5.34 5.34 0 0 0-.31 6h-.09a1 1 0 0 0-.52.81a5.84 5.84 0 0 0 1.95 4.47a1 1 0 0 0-.18 1a6.63 6.63 0 0 0 3.18 3.57A13.89 13.89 0 0 1 4 23a1 1 0 0 0-.5 1.86a16.84 16.84 0 0 0 8.5 2.49a15.16 15.16 0 0 0 9.6-3.57a15.12 15.12 0 0 0 5.69-12.42a4.62 4.62 0 0 0 1.62-2.25a1 1 0 0 0-.14-1Z"
-                />
-              </svg>
-            </a>
-          </div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 124 124"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <path
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                    d="M50.1 62.4v44.4c0 .6.5 1.2 1.2 1.2h16.5c.6 0 1.2-.5 1.2-1.2V61.6h11.9c.6 0 1.1-.5 1.2-1.1l1-13.5c.1-.7-.5-1.3-1.2-1.3h-13v-9.6c0-2.3 1.8-4.1 4.1-4.1h9.2c.6 0 1.2-.5 1.2-1.2V17.3c0-.6-.5-1.2-1.2-1.2H66.6c-9.1 0-16.5 7.4-16.5 16.5v13.1h-8.2c-.6 0-1.2.5-1.2 1.2v13.6c0 .6.5 1.2 1.2 1.2h8.2v.7z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/tbilisistateuniversity"
+                class="footer__social-link"
+                aria-label="Follow Bella Café on Instagram"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M16,4H8C5.791,4 4,5.791 4,8v8c0,2.209 1.791,4 4,4h8c2.209,0 4,-1.791 4,-4V8C20,5.791 18.209,4 16,4Zm2,12c0,1.103 -0.897,2 -2,2H8c-1.103,0 -2,-0.897 -2,-2V8c0,-1.103 0.897,-2 2,-2h8c1.103,0 2,0.897 2,2v8Zm-6,-7a3,3 0 1,0 0,6a3,3 0 0,0 0,-6Zm0,5a2,2 0 1,1 0,-4a2,2 0 0,1 0,4Zm3.5,-5.5a0.9,0.9 0 1,1 -1.8,0a0.9,0.9 0 0,1 1.8,0Z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://twitter.com"
+                class="footer__social-link"
+                aria-label="Follow Bella Café on X (Twitter)"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M28.77 8.11a.87.87 0 0 0-.23-.2A4.69 4.69 0 0 0 29 6.54a1 1 0 0 0-.44-1a1 1 0 0 0-1.1 0a6.42 6.42 0 0 1-2.28.92a6.21 6.21 0 0 0-7.08-1A6.07 6.07 0 0 0 15 12.2a1 1 0 0 0 2-.4a4.08 4.08 0 0 1 2-4.52a4.24 4.24 0 0 1 5.12 1a1 1 0 0 0 .88.28h.25a1 1 0 0 0 .34 1.62a1 1 0 0 0-.36.88a13.07 13.07 0 0 1-4.89 11.24a12.75 12.75 0 0 1-12.65 2.31a9.06 9.06 0 0 0 4.54-2.18a1 1 0 0 0 .15-1.09a1 1 0 0 0-.93-.57a4 4 0 0 1-3-1.39a3.63 3.63 0 0 0 1-.35A1 1 0 0 0 10 18a1 1 0 0 0-.76-.84a4.42 4.42 0 0 1-3-2.48c.24 0 .48.05.74.06a1 1 0 0 0 1-.62A1 1 0 0 0 7.67 13C6 11.48 5.59 9.85 5.83 8.7a13.88 13.88 0 0 0 7 4a1 1 0 1 0 .38-2a12.1 12.1 0 0 1-6.82-4.39a1 1 0 0 0-.75-.38a1 1 0 0 0-.78.33a5.34 5.34 0 0 0-.31 6h-.09a1 1 0 0 0-.52.81a5.84 5.84 0 0 0 1.95 4.47a1 1 0 0 0-.18 1a6.63 6.63 0 0 0 3.18 3.57A13.89 13.89 0 0 1 4 23a1 1 0 0 0-.5 1.86a16.84 16.84 0 0 0 8.5 2.49a15.16 15.16 0 0 0 9.6-3.57a15.12 15.12 0 0 0 5.69-12.42a4.62 4.62 0 0 0 1.62-2.25a1 1 0 0 0-.14-1Z"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </footer>

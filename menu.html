@@ -55,9 +55,7 @@
 
     <div class="nav-overlay" id="navOverlay"></div>
 
-    <h1 class="sr-only">Bella Café — Menu</h1>
-
-    <nav class="nav-sidebar" id="navSidebar">
+    <nav class="nav-sidebar" id="navSidebar" aria-label="Mobile navigation">
       <div class="nav-sidebar__header">
         <div class="nav-sidebar__brand">
           <svg
@@ -116,327 +114,340 @@
       </ul>
     </nav>
 
-    <section class="menu">
-      <div class="menu__header">
-        <h2 class="menu__title">Our Menu</h2>
-        <p class="menu__subtitle">Discover our delicious offerings.</p>
-      </div>
+    <h1 class="sr-only">Bella Café — Menu</h1>
 
-      <div class="menu__tabs">
-        <button class="menu__tab menu__tab--active" data-tab="breakfast">
-          Breakfast
-        </button>
-        <button class="menu__tab" data-tab="lunch">Lunch</button>
-        <button class="menu__tab" data-tab="drinks">Drinks</button>
-        <button class="menu__tab" data-tab="desserts">Desserts</button>
-      </div>
-
-      <div class="menu__grid" id="menuGrid">
-        <div class="menu-card" data-category="breakfast">
-          <div class="img-zoom-wrap">
-            <img
-              src="./assets/food1.jpg"
-              alt="Avocado Toast"
-              class="menu-card__img"
-            />
-          </div>
-          <div class="menu-card__body">
-            <div class="menu-card__top">
-              <h3 class="menu-card__name">Avocado Toast</h3>
-              <span class="menu-card__price">$12.99</span>
-            </div>
-            <p class="menu-card__desc">
-              Smashed avocado on sourdough with cherry tomatoes and poached
-              eggs.
-            </p>
-          </div>
+    <main>
+      <section class="menu">
+        <div class="menu__header">
+          <h2 class="menu__title">Our Menu</h2>
+          <p class="menu__subtitle">Discover our delicious offerings.</p>
         </div>
 
-        <div class="menu-card" data-category="breakfast">
-          <div class="img-zoom-wrap">
-            <img
-              src="./assets/food2.jpg"
-              alt="French Toast"
-              class="menu-card__img"
-            />
-          </div>
-          <div class="menu-card__body">
-            <div class="menu-card__top">
-              <h3 class="menu-card__name">French Toast</h3>
-              <span class="menu-card__price">$10.99</span>
-            </div>
-            <p class="menu-card__desc">
-              Brioche bread with fresh berries, maple syrup, and whipped cream.
-            </p>
-          </div>
+        <div class="menu__tabs">
+          <button class="menu__tab menu__tab--active" data-tab="breakfast">
+            Breakfast
+          </button>
+          <button class="menu__tab" data-tab="lunch">Lunch</button>
+          <button class="menu__tab" data-tab="drinks">Drinks</button>
+          <button class="menu__tab" data-tab="desserts">Desserts</button>
         </div>
 
-        <div class="menu-card" data-category="breakfast">
-          <div class="img-zoom-wrap">
-            <img
-              src="./assets/food3.jpg"
-              alt="Breakfast Bowl"
-              class="menu-card__img"
-            />
-          </div>
-          <div class="menu-card__body">
-            <div class="menu-card__top">
-              <h3 class="menu-card__name">Breakfast Bowl</h3>
-              <span class="menu-card__price">$11.99</span>
+        <div class="menu__grid" id="menuGrid">
+          <!-- BREAKFAST -->
+          <div class="menu-card" data-category="breakfast">
+            <div class="img-zoom-wrap">
+              <img
+                src="./assets/food1.jpg"
+                alt="Avocado Toast"
+                class="menu-card__img"
+              />
             </div>
-            <p class="menu-card__desc">
-              Quinoa, roasted vegetables, soft-boiled egg, and tahini dressing.
-            </p>
+            <div class="menu-card__body">
+              <div class="menu-card__top">
+                <h3 class="menu-card__name">Avocado Toast</h3>
+                <span class="menu-card__price">$12.99</span>
+              </div>
+              <p class="menu-card__desc">
+                Smashed avocado on sourdough with cherry tomatoes and poached
+                eggs.
+              </p>
+            </div>
           </div>
-        </div>
 
-        <div class="menu-card" data-category="breakfast">
-          <div class="img-zoom-wrap">
-            <img
-              src="./assets/food4.jpg"
-              alt="Eggs Benedict"
-              class="menu-card__img"
-            />
-          </div>
-          <div class="menu-card__body">
-            <div class="menu-card__top">
-              <h3 class="menu-card__name">Eggs Benedict</h3>
-              <span class="menu-card__price">$12.99</span>
+          <div class="menu-card" data-category="breakfast">
+            <div class="img-zoom-wrap">
+              <img
+                src="./assets/food2.jpg"
+                alt="French Toast"
+                class="menu-card__img"
+              />
             </div>
-            <p class="menu-card__desc">
-              Poached eggs, Canadian bacon, hollandaise on English muffin.
-            </p>
+            <div class="menu-card__body">
+              <div class="menu-card__top">
+                <h3 class="menu-card__name">French Toast</h3>
+                <span class="menu-card__price">$10.99</span>
+              </div>
+              <p class="menu-card__desc">
+                Brioche bread with fresh berries, maple syrup, and whipped
+                cream.
+              </p>
+            </div>
           </div>
-        </div>
 
-        <div class="menu-card" data-category="lunch">
-          <div class="img-zoom-wrap">
-            <img
-              src="./assets/lunch1.jpeg"
-              alt="Gourmet Burger"
-              class="menu-card__img"
-            />
-          </div>
-          <div class="menu-card__body">
-            <div class="menu-card__top">
-              <h3 class="menu-card__name">Gourmet Burger</h3>
-              <span class="menu-card__price">$16.99</span>
+          <div class="menu-card" data-category="breakfast">
+            <div class="img-zoom-wrap">
+              <img
+                src="./assets/food3.jpg"
+                alt="Breakfast Bowl"
+                class="menu-card__img"
+              />
             </div>
-            <p class="menu-card__desc">
-              Grass-fed beef, aged cheddar, caramelized onions, special sauce.
-            </p>
+            <div class="menu-card__body">
+              <div class="menu-card__top">
+                <h3 class="menu-card__name">Breakfast Bowl</h3>
+                <span class="menu-card__price">$11.99</span>
+              </div>
+              <p class="menu-card__desc">
+                Quinoa, roasted vegetables, soft-boiled egg, and tahini
+                dressing.
+              </p>
+            </div>
           </div>
-        </div>
 
-        <div class="menu-card" data-category="lunch">
-          <div class="img-zoom-wrap">
-            <img
-              src="./assets/lunch2.jpeg"
-              alt="Mediterranean Salad"
-              class="menu-card__img"
-            />
-          </div>
-          <div class="menu-card__body">
-            <div class="menu-card__top">
-              <h3 class="menu-card__name">Mediterranean Salad</h3>
-              <span class="menu-card__price">$13.99</span>
+          <div class="menu-card" data-category="breakfast">
+            <div class="img-zoom-wrap">
+              <img
+                src="./assets/food4.jpg"
+                alt="Eggs Benedict"
+                class="menu-card__img"
+              />
             </div>
-            <p class="menu-card__desc">
-              Mixed greens, feta, olives, cucumber, tomatoes, olive oil
-              dressing.
-            </p>
+            <div class="menu-card__body">
+              <div class="menu-card__top">
+                <h3 class="menu-card__name">Eggs Benedict</h3>
+                <span class="menu-card__price">$12.99</span>
+              </div>
+              <p class="menu-card__desc">
+                Poached eggs, Canadian bacon, hollandaise on English muffin.
+              </p>
+            </div>
           </div>
-        </div>
 
-        <div class="menu-card" data-category="lunch">
-          <div class="img-zoom-wrap">
-            <img
-              src="./assets/lunch3.jpeg"
-              alt="Grilled Salmon"
-              class="menu-card__img"
-            />
-          </div>
-          <div class="menu-card__body">
-            <div class="menu-card__top">
-              <h3 class="menu-card__name">Grilled Salmon</h3>
-              <span class="menu-card__price">$22.99</span>
+          <!-- LUNCH -->
+          <div class="menu-card" data-category="lunch">
+            <div class="img-zoom-wrap">
+              <img
+                src="./assets/lunch1.jpeg"
+                alt="Gourmet Burger"
+                class="menu-card__img"
+              />
             </div>
-            <p class="menu-card__desc">
-              Atlantic salmon with roasted vegetables and lemon butter.
-            </p>
+            <div class="menu-card__body">
+              <div class="menu-card__top">
+                <h3 class="menu-card__name">Gourmet Burger</h3>
+                <span class="menu-card__price">$16.99</span>
+              </div>
+              <p class="menu-card__desc">
+                Grass-fed beef, aged cheddar, caramelized onions, special sauce.
+              </p>
+            </div>
           </div>
-        </div>
 
-        <div class="menu-card" data-category="lunch">
-          <div class="img-zoom-wrap">
-            <img
-              src="./assets/lunch4.jpeg"
-              alt="Club Sandwich"
-              class="menu-card__img"
-            />
-          </div>
-          <div class="menu-card__body">
-            <div class="menu-card__top">
-              <h3 class="menu-card__name">Club Sandwich</h3>
-              <span class="menu-card__price">$14.99</span>
+          <div class="menu-card" data-category="lunch">
+            <div class="img-zoom-wrap">
+              <img
+                src="./assets/lunch2.jpeg"
+                alt="Mediterranean Salad"
+                class="menu-card__img"
+              />
             </div>
-            <p class="menu-card__desc">
-              Triple-decker with turkey, bacon, lettuce, tomato, mayo.
-            </p>
+            <div class="menu-card__body">
+              <div class="menu-card__top">
+                <h3 class="menu-card__name">Mediterranean Salad</h3>
+                <span class="menu-card__price">$13.99</span>
+              </div>
+              <p class="menu-card__desc">
+                Mixed greens, feta, olives, cucumber, tomatoes, olive oil
+                dressing.
+              </p>
+            </div>
           </div>
-        </div>
 
-        <div class="menu-card" data-category="drinks">
-          <div class="img-zoom-wrap">
-            <img
-              src="./assets/drinks1.jpeg"
-              alt="Cappuccino"
-              class="menu-card__img"
-            />
-          </div>
-          <div class="menu-card__body">
-            <div class="menu-card__top">
-              <h3 class="menu-card__name">Cappuccino</h3>
-              <span class="menu-card__price">$4.99</span>
+          <div class="menu-card" data-category="lunch">
+            <div class="img-zoom-wrap">
+              <img
+                src="./assets/lunch3.jpeg"
+                alt="Grilled Salmon"
+                class="menu-card__img"
+              />
             </div>
-            <p class="menu-card__desc">
-              Espresso with steamed milk and rich foam.
-            </p>
+            <div class="menu-card__body">
+              <div class="menu-card__top">
+                <h3 class="menu-card__name">Grilled Salmon</h3>
+                <span class="menu-card__price">$22.99</span>
+              </div>
+              <p class="menu-card__desc">
+                Atlantic salmon with roasted vegetables and lemon butter.
+              </p>
+            </div>
           </div>
-        </div>
 
-        <div class="menu-card" data-category="drinks">
-          <div class="img-zoom-wrap">
-            <img
-              src="./assets/drinks2.jpeg"
-              alt="Caramel Latte"
-              class="menu-card__img"
-            />
-          </div>
-          <div class="menu-card__body">
-            <div class="menu-card__top">
-              <h3 class="menu-card__name">Caramel Latte</h3>
-              <span class="menu-card__price">$5.99</span>
+          <div class="menu-card" data-category="lunch">
+            <div class="img-zoom-wrap">
+              <img
+                src="./assets/lunch4.jpeg"
+                alt="Club Sandwich"
+                class="menu-card__img"
+              />
             </div>
-            <p class="menu-card__desc">
-              Espresso, steamed milk, caramel syrup, topped with whipped cream.
-            </p>
+            <div class="menu-card__body">
+              <div class="menu-card__top">
+                <h3 class="menu-card__name">Club Sandwich</h3>
+                <span class="menu-card__price">$14.99</span>
+              </div>
+              <p class="menu-card__desc">
+                Triple-decker with turkey, bacon, lettuce, tomato, mayo.
+              </p>
+            </div>
           </div>
-        </div>
 
-        <div class="menu-card" data-category="drinks">
-          <div class="img-zoom-wrap">
-            <img
-              src="./assets/drinks3.jpeg"
-              alt="Iced Mocha"
-              class="menu-card__img"
-            />
-          </div>
-          <div class="menu-card__body">
-            <div class="menu-card__top">
-              <h3 class="menu-card__name">Iced Mocha</h3>
-              <span class="menu-card__price">$5.49</span>
+          <!-- DRINKS -->
+          <div class="menu-card" data-category="drinks">
+            <div class="img-zoom-wrap">
+              <img
+                src="./assets/drinks1.jpeg"
+                alt="Cappuccino"
+                class="menu-card__img"
+              />
             </div>
-            <p class="menu-card__desc">Cold brew, chocolate, milk, and ice.</p>
+            <div class="menu-card__body">
+              <div class="menu-card__top">
+                <h3 class="menu-card__name">Cappuccino</h3>
+                <span class="menu-card__price">$4.99</span>
+              </div>
+              <p class="menu-card__desc">
+                Espresso with steamed milk and rich foam.
+              </p>
+            </div>
           </div>
-        </div>
 
-        <div class="menu-card" data-category="drinks">
-          <div class="img-zoom-wrap">
-            <img
-              src="./assets/drinks4.jpeg"
-              alt="Matcha Latte"
-              class="menu-card__img"
-            />
-          </div>
-          <div class="menu-card__body">
-            <div class="menu-card__top">
-              <h3 class="menu-card__name">Matcha Latte</h3>
-              <span class="menu-card__price">$5.99</span>
+          <div class="menu-card" data-category="drinks">
+            <div class="img-zoom-wrap">
+              <img
+                src="./assets/drinks2.jpeg"
+                alt="Caramel Latte"
+                class="menu-card__img"
+              />
             </div>
-            <p class="menu-card__desc">
-              Premium matcha powder with steamed milk.
-            </p>
+            <div class="menu-card__body">
+              <div class="menu-card__top">
+                <h3 class="menu-card__name">Caramel Latte</h3>
+                <span class="menu-card__price">$5.99</span>
+              </div>
+              <p class="menu-card__desc">
+                Espresso, steamed milk, caramel syrup, topped with whipped
+                cream.
+              </p>
+            </div>
           </div>
-        </div>
 
-        <div class="menu-card" data-category="desserts">
-          <div class="img-zoom-wrap">
-            <img
-              src="./assets/desserts1.jpeg"
-              alt="Tiramisu"
-              class="menu-card__img"
-            />
-          </div>
-          <div class="menu-card__body">
-            <div class="menu-card__top">
-              <h3 class="menu-card__name">Tiramisu</h3>
-              <span class="menu-card__price">$7.99</span>
+          <div class="menu-card" data-category="drinks">
+            <div class="img-zoom-wrap">
+              <img
+                src="./assets/drinks3.jpeg"
+                alt="Iced Mocha"
+                class="menu-card__img"
+              />
             </div>
-            <p class="menu-card__desc">
-              Classic Italian dessert with espresso-soaked ladyfingers.
-            </p>
+            <div class="menu-card__body">
+              <div class="menu-card__top">
+                <h3 class="menu-card__name">Iced Mocha</h3>
+                <span class="menu-card__price">$5.49</span>
+              </div>
+              <p class="menu-card__desc">
+                Cold brew, chocolate, milk, and ice.
+              </p>
+            </div>
           </div>
-        </div>
 
-        <div class="menu-card" data-category="desserts">
-          <div class="img-zoom-wrap">
-            <img
-              src="./assets/desserts2.jpeg"
-              alt="Chocolate Lava Cake"
-              class="menu-card__img"
-            />
-          </div>
-          <div class="menu-card__body">
-            <div class="menu-card__top">
-              <h3 class="menu-card__name">Chocolate Lava Cake</h3>
-              <span class="menu-card__price">$8.99</span>
+          <div class="menu-card" data-category="drinks">
+            <div class="img-zoom-wrap">
+              <img
+                src="./assets/drinks4.jpeg"
+                alt="Matcha Latte"
+                class="menu-card__img"
+              />
             </div>
-            <p class="menu-card__desc">
-              Warm chocolate cake with molten center, vanilla ice cream.
-            </p>
+            <div class="menu-card__body">
+              <div class="menu-card__top">
+                <h3 class="menu-card__name">Matcha Latte</h3>
+                <span class="menu-card__price">$5.99</span>
+              </div>
+              <p class="menu-card__desc">
+                Premium matcha powder with steamed milk.
+              </p>
+            </div>
           </div>
-        </div>
 
-        <div class="menu-card" data-category="desserts">
-          <div class="img-zoom-wrap">
-            <img
-              src="./assets/desserts3.jpeg"
-              alt="Crème Brûlée"
-              class="menu-card__img"
-            />
-          </div>
-          <div class="menu-card__body">
-            <div class="menu-card__top">
-              <h3 class="menu-card__name">Crème Brûlée</h3>
-              <span class="menu-card__price">$7.49</span>
+          <!-- DESSERTS -->
+          <div class="menu-card" data-category="desserts">
+            <div class="img-zoom-wrap">
+              <img
+                src="./assets/desserts1.jpeg"
+                alt="Tiramisu"
+                class="menu-card__img"
+              />
             </div>
-            <p class="menu-card__desc">
-              Vanilla custard with caramelized sugar crust.
-            </p>
+            <div class="menu-card__body">
+              <div class="menu-card__top">
+                <h3 class="menu-card__name">Tiramisu</h3>
+                <span class="menu-card__price">$7.99</span>
+              </div>
+              <p class="menu-card__desc">
+                Classic Italian dessert with espresso-soaked ladyfingers.
+              </p>
+            </div>
           </div>
-        </div>
 
-        <div class="menu-card" data-category="desserts">
-          <div class="img-zoom-wrap">
-            <img
-              src="./assets/desserts4.jpeg"
-              alt="Berry Tart"
-              class="menu-card__img"
-            />
-          </div>
-          <div class="menu-card__body">
-            <div class="menu-card__top">
-              <h3 class="menu-card__name">Berry Tart</h3>
-              <span class="menu-card__price">$6.99</span>
+          <div class="menu-card" data-category="desserts">
+            <div class="img-zoom-wrap">
+              <img
+                src="./assets/desserts2.jpeg"
+                alt="Chocolate Lava Cake"
+                class="menu-card__img"
+              />
             </div>
-            <p class="menu-card__desc">
-              Buttery crust filled with pastry cream and fresh berries.
-            </p>
+            <div class="menu-card__body">
+              <div class="menu-card__top">
+                <h3 class="menu-card__name">Chocolate Lava Cake</h3>
+                <span class="menu-card__price">$8.99</span>
+              </div>
+              <p class="menu-card__desc">
+                Warm chocolate cake with molten center, vanilla ice cream.
+              </p>
+            </div>
+          </div>
+
+          <div class="menu-card" data-category="desserts">
+            <div class="img-zoom-wrap">
+              <img
+                src="./assets/desserts3.jpeg"
+                alt="Crème Brûlée"
+                class="menu-card__img"
+              />
+            </div>
+            <div class="menu-card__body">
+              <div class="menu-card__top">
+                <h3 class="menu-card__name">Crème Brûlée</h3>
+                <span class="menu-card__price">$7.49</span>
+              </div>
+              <p class="menu-card__desc">
+                Vanilla custard with caramelized sugar crust.
+              </p>
+            </div>
+          </div>
+
+          <div class="menu-card" data-category="desserts">
+            <div class="img-zoom-wrap">
+              <img
+                src="./assets/desserts4.jpeg"
+                alt="Berry Tart"
+                class="menu-card__img"
+              />
+            </div>
+            <div class="menu-card__body">
+              <div class="menu-card__top">
+                <h3 class="menu-card__name">Berry Tart</h3>
+                <span class="menu-card__price">$6.99</span>
+              </div>
+              <p class="menu-card__desc">
+                Buttery crust filled with pastry cream and fresh berries.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
     <footer class="footer">
       <div class="footer__grid">
@@ -468,7 +479,7 @@
         </div>
 
         <div class="footer__col">
-          <span class="footer__col-title">Quick Links</span>
+          <h3 class="footer__col-title">Quick Links</h3>
           <ul class="footer__links">
             <li><a href="index.html">Home</a></li>
             <li><a href="menu.html">Menu</a></li>
@@ -479,11 +490,11 @@
         </div>
 
         <div class="footer__col">
-          <span class="footer__col-title">Contact Us</span>
+          <h3 class="footer__col-title">Contact Us</h3>
           <div class="footer__contact">
             <a
               target="_blank"
-              href="https://www.google.com/maps/place/TSU+11th+Building+(Ganivi)/@41.7169702,44.7189763,17z/data=!3m1!4b1!4m6!3m5!1s0x40447371b40dc741:0xaa9f66639d890960!8m2!3d41.7169702!4d44.7215512!16s%2Fg%2F1vtzfq1t?entry=ttu&g_ep=EgoyMDI2MDUxNy4wIKXMDSoASAFQAw%3D%3D"
+              href="https://www.google.com/maps/place/TSU+11th+Building+(Ganivi)/@41.7169702,44.7189763,17z"
               >123 Coffee Street, Bean City, CA 90210</a
             >
             <p>
@@ -494,7 +505,7 @@
         </div>
 
         <div class="footer__col">
-          <span class="footer__col-title">Follow Us</span>
+          <h3 class="footer__col-title">Follow Us</h3>
           <div class="footer__socials">
             <a
               href="https://www.facebook.com/TbilisiStateUniversity"

@@ -38,13 +38,9 @@
 
       <nav class="header__nav">
         <ul class="header__nav-list">
-          <li>
-            <a href="index.html" class="header__nav-link">Home</a>
-          </li>
+          <li><a href="index.html" class="header__nav-link">Home</a></li>
           <li><a href="menu.html" class="header__nav-link">Menu</a></li>
-          <li>
-            <a href="about.html" class="header__nav-link">About Us</a>
-          </li>
+          <li><a href="about.html" class="header__nav-link">About Us</a></li>
           <li>
             <a
               href="gallery.html"
@@ -59,7 +55,7 @@
 
     <div class="nav-overlay" id="navOverlay"></div>
 
-    <nav class="nav-sidebar" id="navSidebar">
+    <nav class="nav-sidebar" id="navSidebar" aria-label="Mobile navigation">
       <div class="nav-sidebar__header">
         <div class="nav-sidebar__brand">
           <svg
@@ -104,13 +100,9 @@
         </div>
       </div>
       <ul class="nav-sidebar__list">
-        <li>
-          <a href="index.html" class="nav-sidebar__link">Home</a>
-        </li>
+        <li><a href="index.html" class="nav-sidebar__link">Home</a></li>
         <li><a href="menu.html" class="nav-sidebar__link">Menu</a></li>
-        <li>
-          <a href="about.html" class="nav-sidebar__link">About Us</a>
-        </li>
+        <li><a href="about.html" class="nav-sidebar__link">About Us</a></li>
         <li>
           <a
             href="gallery.html"
@@ -122,41 +114,45 @@
       </ul>
     </nav>
 
-    <section class="gallery">
-      <div class="gallery__header">
-        <h2 class="gallery__title">Our Gallery</h2>
-        <p class="gallery__subtitle">
-          A glimpse into the Bella Café experience
-        </p>
-      </div>
+    <h1 class="sr-only">Bella Café — Gallery</h1>
 
-      <div class="gallery__grid">
-        <div class="gallery__item img-zoom-wrap">
-          <img src="./assets/food1.jpg" alt="Avocado Toast" />
+    <main>
+      <section class="gallery">
+        <div class="gallery__header">
+          <h2 class="gallery__title">Our Gallery</h2>
+          <p class="gallery__subtitle">
+            A glimpse into the Bella Café experience
+          </p>
         </div>
-        <div class="gallery__item gallery__item--wide img-zoom-wrap">
-          <img src="./assets/ourStoryImg.jpeg" alt="Café interior" />
+
+        <div class="gallery__grid">
+          <div class="gallery__item img-zoom-wrap">
+            <img src="./assets/food1.jpg" alt="Avocado Toast" />
+          </div>
+          <div class="gallery__item gallery__item--wide img-zoom-wrap">
+            <img src="./assets/ourStoryImg.jpeg" alt="Café interior" />
+          </div>
+          <div class="gallery__item gallery__item--wide img-zoom-wrap">
+            <img src="./assets/photo2.jpeg" alt="Café atmosphere" />
+          </div>
+          <div class="gallery__item img-zoom-wrap">
+            <img src="./assets/drinks3.jpeg" alt="Iced Mocha" />
+          </div>
+          <div class="gallery__item img-zoom-wrap">
+            <img src="./assets/drinks4.jpeg" alt="Matcha Latte" />
+          </div>
+          <div class="gallery__item gallery__item--wide img-zoom-wrap">
+            <img src="./assets/food3.jpg" alt="Breakfast Bowl" />
+          </div>
+          <div class="gallery__item gallery__item--wide img-zoom-wrap">
+            <img src="./assets/food4.jpg" alt="Eggs Benedict" />
+          </div>
+          <div class="gallery__item img-zoom-wrap">
+            <img src="./assets/desserts3.jpeg" alt="Crème Brûlée" />
+          </div>
         </div>
-        <div class="gallery__item img-zoom-wrap gallery__item--wide">
-          <img src="./assets/photo2.jpeg" alt="Café atmosphere" />
-        </div>
-        <div class="gallery__item img-zoom-wrap">
-          <img src="./assets/drinks3.jpeg" alt="Iced Mocha" />
-        </div>
-        <div class="gallery__item img-zoom-wrap">
-          <img src="./assets/drinks4.jpeg" alt="Matcha Latte" />
-        </div>
-        <div class="gallery__item img-zoom-wrap gallery__item--wide">
-          <img src="./assets/food3.jpg" alt="Breakfast Bowl" />
-        </div>
-        <div class="gallery__item img-zoom-wrap gallery__item--wide">
-          <img src="./assets/food4.jpg" alt="Gourmet Burger" />
-        </div>
-        <div class="gallery__item img-zoom-wrap">
-          <img src="./assets/desserts3.jpeg" alt="Crème Brûlée" />
-        </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
     <footer class="footer">
       <div class="footer__grid">
@@ -188,7 +184,7 @@
         </div>
 
         <div class="footer__col">
-          <span class="footer__col-title">Quick Links</span>
+          <h3 class="footer__col-title">Quick Links</h3>
           <ul class="footer__links">
             <li><a href="index.html">Home</a></li>
             <li><a href="menu.html">Menu</a></li>
@@ -199,11 +195,11 @@
         </div>
 
         <div class="footer__col">
-          <span class="footer__col-title">Contact Us</span>
+          <h3 class="footer__col-title">Contact Us</h3>
           <div class="footer__contact">
             <a
               target="_blank"
-              href="https://www.google.com/maps/place/TSU+11th+Building+(Ganivi)/@41.7169702,44.7189763,17z/data=!3m1!4b1!4m6!3m5!1s0x40447371b40dc741:0xaa9f66639d890960!8m2!3d41.7169702!4d44.7215512!16s%2Fg%2F1vtzfq1t?entry=ttu&g_ep=EgoyMDI2MDUxNy4wIKXMDSoASAFQAw%3D%3D"
+              href="https://www.google.com/maps/place/TSU+11th+Building+(Ganivi)/@41.7169702,44.7189763,17z"
               >123 Coffee Street, Bean City, CA 90210</a
             >
             <p>
@@ -214,7 +210,7 @@
         </div>
 
         <div class="footer__col">
-          <span class="footer__col-title">Follow Us</span>
+          <h3 class="footer__col-title">Follow Us</h3>
           <div class="footer__socials">
             <a
               href="https://www.facebook.com/TbilisiStateUniversity"

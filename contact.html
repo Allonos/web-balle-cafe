@@ -150,7 +150,6 @@
         </header>
 
         <div class="contact__body">
-          <!-- Contact information column -->
           <address class="contact__info-col">
             <ul class="contact__info-list" role="list">
               <li class="contact__info-item">
@@ -272,23 +271,12 @@
             </a>
           </address>
 
-          <!-- Contact form column -->
-          <section aria-labelledby="contact-form-heading">
+          <section>
             <h2 id="contact-form-heading" class="contact__form-title">
               Send Us a Message
             </h2>
-            <form
-              class="contact__form"
-              id="contactForm"
-              novalidate
-              aria-describedby="form-status"
-            >
-              <p
-                id="form-status"
-                class="sr-only"
-                aria-live="polite"
-                aria-atomic="true"
-              ></p>
+            <form class="contact__form" id="contactForm" novalidate>
+              <p id="form-status" class="sr-only"></p>
 
               <div class="contact__form-group">
                 <label class="contact__label" for="contactName">
@@ -301,17 +289,8 @@
                   id="contactName"
                   name="name"
                   placeholder="Your name"
-                  required
-                  autocomplete="name"
-                  aria-required="true"
-                  aria-describedby="nameError"
                 />
-                <span
-                  class="contact__error"
-                  id="nameError"
-                  role="alert"
-                  aria-live="polite"
-                ></span>
+                <span class="contact__error" id="nameError"></span>
               </div>
 
               <div class="contact__form-group">
@@ -325,17 +304,8 @@
                   id="contactEmail"
                   name="email"
                   placeholder="your@email.com"
-                  required
-                  autocomplete="email"
-                  aria-required="true"
-                  aria-describedby="emailError"
                 />
-                <span
-                  class="contact__error"
-                  id="emailError"
-                  role="alert"
-                  aria-live="polite"
-                ></span>
+                <span class="contact__error" id="emailError"></span>
               </div>
 
               <div class="contact__form-group">
@@ -348,16 +318,8 @@
                   id="contactMessage"
                   name="message"
                   placeholder="Write your message..."
-                  required
-                  aria-required="true"
-                  aria-describedby="messageError"
                 ></textarea>
-                <span
-                  class="contact__error"
-                  id="messageError"
-                  role="alert"
-                  aria-live="polite"
-                ></span>
+                <span class="contact__error" id="messageError"></span>
               </div>
 
               <button type="submit" class="btn btn--primary btn--submit">

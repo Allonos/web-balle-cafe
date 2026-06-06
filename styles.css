@@ -382,7 +382,7 @@ svg {
 }
 
 .btn:hover {
-  transform: translateY(-2px);
+  background-color: var(--color-gold);
 }
 .btn:active {
   transform: translateY(0);

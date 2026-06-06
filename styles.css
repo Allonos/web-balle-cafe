@@ -381,13 +381,6 @@ svg {
   border: none;
 }
 
-.btn:hover {
-  transform: translateY(-2px);
-}
-.btn:active {
-  transform: translateY(0);
-}
-
 .btn--primary {
   background-color: var(--color-gold);
   color: var(--color-espresso);
